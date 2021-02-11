@@ -146,7 +146,7 @@ export default function Home({ posts }) {
   );
 }
 
-export const getServerSideProps = async (ctx) => {
+export const getStaticProps = async (ctx) => {
   // Fetch data from external API
   const res = await fetch(
     `https://gammalochhorde.gg/wp-json/wp/v2/posts?_embed&per_page=10`
